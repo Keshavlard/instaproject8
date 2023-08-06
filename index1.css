@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #062408;
+}
+
+h2{
+    position: relative;
+    font-size: 4em;
+    letter-spacing: 5px;
+    color: #002d02;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(187, 0, 0, 0.533));
+    line-height: 0.70em;
+    outline: none;
+    animation: example 5s linear infinite;
+
+}
+
+@keyframes example
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #239e2f;
+        text-shadow: none;
+    }
+    18%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #ffffff;
+        text-shadow: 0 0 10px #03f413,
+        0 0 20px #03f413,
+        0 0 40px #03f413,
+        0 0 80px #03f413,
+        0 0 160px #03f413;
+    }
+}
